@@ -16,7 +16,7 @@ const PostForm = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8000/api/posts', {
+            const response = await fetch('https://lastwild-diary-api.onrender.com/api/posts', {
                 method: 'POST',
                 body: JSON.stringify(post),
                 headers: {

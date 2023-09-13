@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(()=>{
         const fetchPosts = async () =>{
-            const response = await fetch('http://localhost:8000/api/posts',{
+            const response = await fetch('https://lastwild-diary-api.onrender.com/api/posts',{
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
