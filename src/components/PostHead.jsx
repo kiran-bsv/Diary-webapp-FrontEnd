@@ -43,7 +43,8 @@ const PostHead = ({post}) => {
             </span>
             <div>{ format(new Date(post.date), 'MMMM d, y') }</div>
 
-            <p>{post.content.substring(0,200) + ' ...'}</p>
+            <p>{post.content.length > 200 ? post.content.substring(0, 200) + ' ...' : post.content}</p>
+
         </li>
     );
 };
